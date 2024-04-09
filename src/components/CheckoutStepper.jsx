@@ -27,6 +27,7 @@ const CheckoutStepper = ({
   return (
     <div
       style={{
+        padding : "20px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -37,7 +38,7 @@ const CheckoutStepper = ({
         style={{
           display: "flex",
           gap: "25px",
-          alignItems: "center",
+          alignItems: "flex-start",
           position: "relative",
         }}
       >
@@ -47,7 +48,7 @@ const CheckoutStepper = ({
             height: "8px",
             width: "100%",
             position: "absolute",
-            top: "30%",
+            top: "21px",
             zIndex: "-999px",
           }}
         ></div>
@@ -57,7 +58,7 @@ const CheckoutStepper = ({
             height: "8px",
             width: `${stepsLineIndicatorWIdth}%`,
             position: "absolute",
-            top: "30%",
+            top: "21px",
             zIndex: "-999px",
           }}
         ></div>
@@ -94,7 +95,7 @@ const CheckoutStepper = ({
               >
                 {index + 1}
               </h2>
-              <h3>{step.name}</h3>
+              <h3 style={{textAlign : "center"}}>{step.name}</h3>
             </div>
           );
         })}
